@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("hinh1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 100px;
+	color: white;
+}
+
+header img{
+	width: auto;
+	height: 150px;
+}
+
+header .trai {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	height: 20px;
+	padding-top: 20px;
+}
+
+.trai a{
+	text-decoration: none;
+	color: white;
+}
+
+.trai a:hover{
+	color:#B26D5E;
+}
+
+header .phai{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 400px;
+	height: 30px;
+	padding: 25px 0;
+}
+
+.phai .button a{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+	font-weight: 500px;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;	
+}
+
+.phai .button a span{
+	position: absolute;
+	display: block;
+	background: #B26D5E;
+}
+
+.phai .button a span:nth-child(1){
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(1){
+	transform: scaleX(1);
+	transition-delay: 0.3s;
+}
+
+.phai .button a span:nth-child(2){
+	right:0;
+	top:0;
+	width: 2px;
+	height: 100%;
+	transform-origin: top;
+	transform: scaleY(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(2){
+	transform: scaleY(1);
+}
+
+.phai .button a span:nth-child(3){
+	right:0;
+	bottom:0;
+	width: 100%;
+	height: 2px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(3){
+	transform: scaleX(1);
+	transition-delay: 0.2s;
+}
+
+.phai .button a span:nth-child(4){
+	left:0;
+	bottom:0;
+	width: 2px;
+	height: 100%;
+	transform-origin: bottom;
+	transform: scaleY(0);
+	transition: transform 0.2s;
+}
+
+.phai .button a:hover span:nth-child(4){
+	transform: scaleY(1);
+	transition-delay: 0.3s;
+}
+
+.phai .button a:hover{
+	border: none;
+	color:#B26D5E;
+}
+
+main{
+	background-color: #181818;
+	text-align: center;
+	color: white;
+}
+
+main h1,h2,p{
+	padding: 10px 0;
+}
+#body1{
+	padding: 50px;
+	
+}
+
+#body1 .part1{
+	padding: 50px
+}
+#body1 .part1 img{
+	height: 150px;
+}
+
+#body1 .part2{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-auto-rows: 300px 300px;
+	grid-gap: 20px;
+	padding: 30px;
+}
+
+.part2 .grid1{
+	background-image: url("42");
+	background-size: cover;
+	grid-row:1/3;
+}
+
+.part2 .grid2{
+	background-image: url("82");
+	background-size: cover;
+
+}
+
+.part2 .grid3{
+	background-image: url("56");
+	background-size: cover;
+}
+
+
+.part3 img{
+	width: 5%;
+}
+
+.part3 button{
+background: transparent;
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+	margin: 10px;
+	}
+
+.part3 button:hover {
+	background-color: #B26D5E;
+	color: black;
+}
+
+#body2 .element{
+	width: 5%;
+	padding-bottom: 30px;
+}
+
+#body2 .item{
+	width: 100%;
+}
+
+#body3 .all{
+	margin: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+#body3 .left img{
+	width: 70%;
+}
+
+#body3 .right {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	align-items:center
+}
+
+#body3 .right button{
+	background: transparent;
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+} 
+
+#body3 .right button:hover {
+	background-color: #B26D5E;
+	color: black;
+}
+#body4{
+	background-color: #B16D5E;
+	color: black;
+	height: 1350px;
+	padding: 50px 0;
+}
+
+#body4 .all {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+#body4 .element{
+	width: 5%;
+	padding-bottom: 30px;
+}
+
+#body4 img{
+	width: 90%;
+}
+
+#body4 .bottom{
+	width: 70%;
+}
+
+#body4 .bottom p{
+	padding-top: 50px;
+}
+
+#body4 button{
+	background: transparent;
+	border: 1px solid black;
+	padding: 10px 20px;
+	color: black;
+} 
+
+#body4 button:hover {
+	background-color: #181818;
+	color: white
+}
+#body5{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+} 
+
+#body5 .element{
+	width: 5%;
+	padding-bottom: 30px;
+}
+
+#body5 button{
+	background: transparent;
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+} 
+
+#body5 button:hover {
+	background-color: #B26D5E;
+	color: black;
+}
+
+#body5 .card{
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0px;
+}
+
+#body5 .col img{
+	width: 80%;
+}
+
+#body6{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+} 
+
+
+#body6 .tren button{
+	background: transparent;
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+	margin-bottom: 50px;
+} 
+
+#body6 .tren button:hover {
+	background-color: #B26D5E;
+	color: black;
+}
+
+
+footer{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-color: #181818;
+	color: white;
+	padding: 100px 0;
+}
+footer img{
+	width: 40%;
+}
+.leftbox{
+	text-align: left;
+}
+.rightbox{
+	background-color: #B26D5E;
+	width: 30%;
+	padding: 40px;
+}
+.rightbox input,textarea{
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px;
+	
+	}
+.nutbam{
+	background: transparent;
+	border: 1px solid black;
+	padding: 10px 20px;
+	color: black;
+} 
+
+.nutbam:hover{
+	border:  1px solid white;
+	color: white
+}
